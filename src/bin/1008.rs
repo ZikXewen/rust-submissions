@@ -2,7 +2,7 @@ use std::io::stdin;
 fn get_line() -> String {
     let mut str = String::new();
     stdin().read_line(&mut str).unwrap();
-    str.trim().to_owned()
+    str.trim_end().to_owned()
 }
 fn main() {
     let n: usize = get_line().parse().unwrap();
